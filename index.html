@@ -6,9 +6,9 @@
     <script>
         $(document).ready(function () {
             //Variables
-            const listeMot = new Array("rouge", "blanc", "vert", "bleu", "jaune", "cyan", "rose", "marron", "orange", "violet", "gris");
-            const listeCouleur = new Array('red', 'white', 'green', 'blue', 'yellow', 'cyan', 'pink', 'brown', 'orange', 'purple', 'gray');
-            const listeTom = new Array('eguor', 'cnalb', 'trev', 'uelb', 'enuaj', 'nayc', 'esor', 'norram', 'egnaro', 'teloiv', 'sirg');
+            const listeMot = new Array("rouge", "blanc", "vert", "bleu", "jaune", "cyan", "rose", "marron", "orange", "violet");
+            const listeCouleur = new Array('red', 'white', 'green', 'blue', 'yellow', 'cyan', 'pink', 'brown', 'orange', 'purple');
+            const listeTom = new Array('eguor', 'cnalb', 'trev', 'uelb', 'enuaj', 'nayc', 'esor', 'norram', 'egnaro', 'teloiv');
             var idIndividu;
             var mot;
             var couleur;
@@ -53,15 +53,12 @@
                 timer = 0;
                 start();
             });
-
             $("#start").bind("click", function (event) {
                 $("#intro").hide(1000);
                 $("#cadre").show("slow", function () {
 
                 });
             });
-
-
             $(".reponse").bind("click", function (event) {
                 // On arrête le timer
                 stop();
@@ -97,7 +94,6 @@
                 timeBegan = null;
                 timeStopped = null;
             }
-
             function clockRunning() {
                 var currentTime = new Date()
                     , timeElapsed = new Date(currentTime - timeBegan - stoppedDuration)
@@ -154,7 +150,7 @@
             margin: 0 auto;
             margin-top: 5%;
             border-radius: 300px;
-            background-color: #333;
+            background-color: #808080;
             display: none;
         }
 
